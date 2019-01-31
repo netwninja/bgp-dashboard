@@ -1,0 +1,18 @@
+[global.config]
+  as = 65412
+  router-id = "2.2.2.4"
+
+[[neighbors]]
+  [neighbors.config]
+    neighbor-address = "5.5.5.5"
+    peer-as = 12666
+    route-flap-damping = "True"
+  [neighbors.ebgp-multihop.config]
+    enabled = true
+    multihop-ttl = 4
+[[neighbors.afi-safis]]
+  [neighbors.afi-safis.config]
+    afi-safi-name = "ipv4-unicast"
+[[neighbors.afi-safis]]
+  [neighbors.afi-safis.config]
+    afi-safi-name = "ipv6-unicast"
